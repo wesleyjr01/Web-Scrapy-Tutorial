@@ -13,7 +13,7 @@ class SeleniumSpider(Spider):
     allowed_domains = ['books.toscrape.com']
 
     def start_requests(self):
-        self.driver = webdriver.Chrome('C:\GitRepos\Web-Scrapy-Tutorial\Scrapy_With_Selenium\chromedriver.exe')
+        self.driver = webdriver.Chrome('C:\Crawlers_Intexfy\Crawlers\company_growth\chromedriver.exe')
         self.driver.get('http://books.toscrape.com')
         
         sel = Selector(text=self.driver.page_source)
